@@ -1,0 +1,57 @@
+/* Result.css */
+.dropdown-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.button-wrapper {
+  width: 50%; /* Set the width to match the dropdown button */
+}
+
+
+.dropdown-button, .action-button {
+  background-color: #f8f9fa;
+  color: black;
+  padding: 16px 32px;
+  font-size: 18px;
+  border: 1px solid #ddd;
+  cursor: pointer;
+  width: 100%; /* Ensure both buttons fill the width of their container */
+  border-radius: 5px;
+  outline: none;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.dropdown-list {
+  position: absolute;
+  list-style: none;
+  padding: 0;
+  margin-top: 5px;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  width: max-content;
+}
+
+.dropdown-list-item {
+  padding: 15px 30px;
+  cursor: pointer;
+  font-size: 16px;
+  white-space: nowrap;
+}
+
+.dropdown-list-item:hover {
+  background-color: #f2f2f2;
+}
+.action-button {
+  margin-top: 10px; /* Adjusts spacing between the dropdown and action button */
+}
+.button-container {
+  width: 50%; /* Ensures both dropdown and action buttons match in width */
+  margin-bottom: 10px; /* Adds spacing between button groups */
+}

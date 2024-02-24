@@ -1,0 +1,42 @@
+.webcam-container {
+    display: flex;
+    flex-direction: row; /* Align children (webcam and buttons) in a row */
+    height: 100vh; /* Full viewport height */
+    justify-content: center;
+}
+  
+.webcam {
+    flex: 0 0 auto; /* Do not grow or shrink the webcam size */
+    width: auto; /* Adjust width automatically */
+    max-width: 90%; /* Maximum width of webcam adjusted to preference */
+    max-height: 80%; /* Ensure the webcam does not exceed the viewport height */
+    object-fit: contain; /* Ensures the webcam feed fits the allocated space without distortion */
+  }
+  .buttons-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Changed from 'start' to 'flex-start' for better browser support */
+    align-items: center; /* Center buttons horizontally */
+    padding: 40px; /* Padding around the buttons */
+    width: 40%; /* Adjusted width of the button container */
+    max-width: 150px; /* Maximum width to ensure buttons do not get too wide */
+  }
+  .action-button {
+    margin: 100px 0; /* Reduced space between buttons */
+    cursor: pointer; /* Mouse pointer on hover */
+    font-size: 2rem; /* Font size of button text */
+    width: 100%; /* Buttons fill the container width */
+    text-align: center; /* Center button text */
+    padding: 20px 0px; /* Adjust padding to ensure text is vertically centered */
+  }
+  .logo-container {
+    margin-bottom: 20px; /* Adjust the space as needed */
+  }
+  .logo {
+    width: 100px; /* Adjust the size as needed */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+  }

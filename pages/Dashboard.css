@@ -1,0 +1,74 @@
+.App {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    background-color: rgb(252, 252, 252);
+  
+  }
+  
+  .Container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff; /* or any color you want */
+    padding: 20px;
+    border-radius: 8px; /* to match the rounded corners in the design */
+  }
+  
+  img {
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+  }
+  
+  button {
+    padding: 10px 20px;
+    margin: 0 0 10px 10px; /* Adjust spacing as needed */
+    border: none;
+    border-radius: 5px;
+    background-color: #ff5f5f; /* Example button color */
+    color: white;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #e55e5e; /* slightly darker shade on hover */
+  }
+  .Webcam, img {
+    /* Set a max width to keep the aspect ratio and for alignment */
+    max-width: 80%;
+  }
+  .ButtonContainer {
+    display: flex;
+    flex-direction: column; /* Stack buttons vertically */
+    justify-content: space-around; /* Even spacing between buttons */
+    height: 100%; /* Full height to match webcam */
+  }
+  .WebcamLayout {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .Webcam {
+    max-width: 70%; /* Adjust the width of the webcam to leave space for the sidebar */
+  }
+  
+  .Sidebar {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px; /* Spacing between the webcam and the buttons */
+  }
+  
+  button {
+    padding: 10px 20px;
+    margin-bottom: 10px; /* Spacing between buttons */
+    border: none;
+    border-radius: 5px;
+    background-color: #ff5f5f;
+    color: white;
+    cursor: pointer;
+  }
+  
